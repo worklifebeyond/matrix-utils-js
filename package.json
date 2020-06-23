@@ -1,5 +1,5 @@
 {
-  "name": "wlb-matrix-utils",
+  "name": "@worklifebeyond/wlb-matrix-utils",
   "version": "1.0.0",
   "description": "Service to service Matrix utilities",
   "main": "index.js",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/worklifebeyond/matrix-utils-js#readme",
   "dependencies": {
     "axios": "^0.19.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/worklifebeyond"
   }
 }
