@@ -1,0 +1,19 @@
+{
+  "name": "wlb-matrix-utils",
+  "version": "1.0.0",
+  "description": "Service to service Matrix utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worklifebeyond/matrix-utils-js.git"
+  },
+  "author": " <hendra@wlb.co.id>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/worklifebeyond/matrix-utils-js/issues"
+  },
+  "homepage": "https://github.com/worklifebeyond/matrix-utils-js#readme"
+}
