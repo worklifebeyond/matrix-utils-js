@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/worklifebeyond/matrix-utils-js/issues"
   },
-  "homepage": "https://github.com/worklifebeyond/matrix-utils-js#readme"
+  "homepage": "https://github.com/worklifebeyond/matrix-utils-js#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }
