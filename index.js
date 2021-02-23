@@ -30,13 +30,30 @@ module.exports = class MatrixUtils {
         try {
             let data = {
                 userId: params.id,
-                password: params.password
+                password: params.password,
+                email: params.email,
             };
             const {data: response} = await axios.post(`${this.baseUrl}/users/token`, data, this.config);
             if(this.debug) console.log('[Matrix Utils] sign in success: ', params.id);
             return response;
         } catch (e) {
             if(this.debug) console.log('[Matrix Utils] sign in failed: ', e);
+            throw e;
+        }
+    };
+
+
+    async logForgotPass(params) {
+        if(this.debug) console.log('[Matrix Utils] user: ', params.id);
+        try {
+            let data = {
+                userId: params.id,
+            };
+            const {data: response} = await axios.post(`${this.baseUrl}/users/forgot-pass`, data, this.config);
+            if(this.debug) console.log('[Matrix Utils] forgot pass log success: ', params.id);
+            return response;
+        } catch (e) {
+            if(this.debug) console.log('[Matrix Utils] forgot pass log failed: ', e);
             throw e;
         }
     };
